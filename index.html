@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html2
+    </title>
+</head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>White</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>registered</td>
+                <td>not registered</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <table border="1">
+        <tr>
+            <td colspan="2">Cell [1,1]</td>
+            <td>Cell [1,2]</td>
+        </tr>
+        <tr>
+            <td>Cell [2,1]</td>
+            <td>Cell [2,2]</td>
+            <td>Cell [2,3]</td>
+        </tr>
+        <tr>
+            <td>Cell [2,1]</td>
+            <td rowspan="2">Cell [2,2]</td>
+            <td>Cell [2,3]</td>
+        </tr>
+        <tr>
+            <td>Cell [3,1]</td>
+            <td>Cell [3,2]</td>
+        </tr>
+    </table>
+    <form action="" method="get">
+        <!-- form fields inside -->
+        <input type="text" name="firstName" id="firstName" placeholder="Enter first name..." required value="John">
+        <br>
+        <br>
+
+        <textarea name="review" id="review" rows="5" cols="35"> This is my very long review! </textarea>
+        <br>
+        <br>
+        <input type="password" name="pass" id="pass">
+        <br>
+        <br>
+        <label for="lastName">Last name:</label>
+        <input type="text" name="last_name_server" id="lastName">
+        <br>
+        <br>
+        <select name="pet" id="pet">
+            <option value="">--Choose--</option>
+            <option value="dog">Dog</option>
+            <option value="cat" selected>Cat</option>
+            <option value="other">other</option>
+        </select>
+        <br>
+        <br>
+        <label for="pets">Your many pets:</label>
+        <select name="pets" id="pets" multiple size="4">
+            <optgroup label="4-legged pets">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster" disabled>Hamster</option>
+            </optgroup>
+            <optgroup label="2-legged pets">
+                <option value="parrot">Parrot</option>
+                <option value="other_birds">Other birds</option>
+            </optgroup>
+        </select>
+        <p>Choose your poison:</p>
+        <div>
+            <input type="checkbox" id="water" name="poison" checked value="water_selected">
+            <label for="water">Water</label>
+        </div>
+        <div>
+            <input type="checkbox" id="wine" name="poison" value="wine_selected">
+            <label for="wine">Wine</label>
+        </div>
+
+        <p>Choose what to learn:</p>
+        <br>
+        <input type="radio" id="html" name="learn" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="learn" value="CSS" disabled>
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="learn" value="JavaScript" checked>
+        <label for="javascript">JavaScript</label>
+        <br>
+        <br>
+        <input type="hidden" id="customerId" name="customerId" value="2345">
+        <label for="fileUpload">Select a file:</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+        <br>
+        <br>
+
+        <input type="button" value="Click here!">
+        <br>
+        <input type="reset" name="resetButton" value="Reset">
+        <br>
+        <input type="submit" name="submitButton" value="Send form">
+        <br>
+        <button type="submit" name="saveButton">Save</button>
+        <br>
+        <button type="button" name="clickButton">No, click me!</button>
+        <br>
+        <a href="https://www.w3schools.com/" tabindex="2">W3Schools</a>
+        <a href="http://www.google.com/" tabindex="1">Google</a>
+        <a href="http://www.microsoft.com/" tabindex="3">Microsoft</a>
+        <a href="http://www.apple.com/" tabindex="-1">Apple</a>
+        <br>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video player"
+            frameborder="0" allowfullscreen>
+        </iframe>
+    </form>
+</body>
+
+</html>
